@@ -1,0 +1,93 @@
+/** Mobile first - Reference: iPhone 5 */
+
+body
+  font-size 16px
+  font-family 'Open Sans', Helvetica, Arial, sans-serif
+  color font_color_default
+a
+  text-decoration none
+  color orange
+ul
+  list-style none
+  margin 0
+  padding 0
+.centered
+  position relative
+  margin 0 auto
+.button
+  padding 10px 15px
+  text-decoration none
+  color font_color_default
+  border 1px solid font_color_default
+
+header
+  &.main figure
+    text-align center
+    padding 20px 0
+    img
+      max-width logo_width
+  p.description
+    text-transform uppercase
+    font-size .7em
+    margin-top 0
+ul.gallery-separator
+  text-align center
+  height image_size
+  overflow hidden
+  li
+    display inline
+    img
+      width image_size
+      height image_size
+p.members
+  text-transform uppercase
+  text-align center
+  .join-us
+    border none
+    background-color orange
+    display inline-block
+    color white
+    font-weight bold
+section.events
+  padding 20px
+  text-align center
+  h2
+    font-size 1.3em
+    text-shadow 2px 2px 0px free_slot_color
+    margin-bottom 30px
+.slot
+  background-color #f7f7f7
+  border-width 5px
+  border-style solid
+  border-color orange
+  width 100%
+  max-width 280px
+  height 270px
+  margin-bottom 20px
+  box-sizing border-box
+  padding 20px
+  display inline-block
+  h3
+    margin-top 0
+    text-transform uppercase
+  p
+    text-align left
+  &.free
+    border-color free_slot_color
+    border-style dashed
+footer
+  border-top 1px solid font_color_default
+  padding 20px
+  .section
+    height auto
+    box-sizing border-box
+    display inline-block
+    vertical-align top
+    padding 20px
+    width 100%
+
+  & > small
+    display block
+    width 100%
+    margin-top 30px
+    text-align center

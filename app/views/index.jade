@@ -1,0 +1,62 @@
+extends layout
+
+block content
+  header.main
+      figure
+        a(href='/')
+          img(src='/img/logo.png')
+        p.description People doing stuff with Javascript
+
+      ul.gallery-separator
+        each i in [1, 2, 3]
+          each member in members
+            if member.photo
+              li
+                img(src='#{member.photo.thumb_link}', title='#{member.name}')
+  section.javascripters
+      p.members #{members.length} Javascripters
+          p.members
+              a.button.join-us(href='//meetup.com/mallorcajs', target='_blank') Join us!
+  section.events
+      if events.length == 0
+        h2 No event scheduled ATM
+      else
+        h2.active
+
+      each event in [events[0], events[1], events[2]]
+        if event
+          div.slot
+        else
+          div.slot.free
+            h3 It is free
+            strong This slot could be yours!
+            p
+              small= 'Submit your talk now and show us your knowledge, just contact us by '
+                a(href='mailto:info@mallorcajs.com') email
+                span= ' or '
+                a(href='twitter.com/mallorcajs', target='_blank') twitter
+            p
+              small= 'This list is managed by '
+                a(href='//meetup.com/mallorcajs', target='_blank') meetup event list
+  footer
+      div.section
+        h3 Contact us!
+        ul
+          li= 'Follow us in '
+            a(href='//twitter.com/mallorcajs', target='_blank') twitter
+          li= 'Be part of our community in '
+            a(href='//meetup.com/mallorcajs', target='_blank') meetup
+          li= 'Take a look at out code in '
+            a(href='//github.com/mallorcajs', target='_blank') github
+      div.section
+        h3 Our team
+        p= 'MallorcaJS is organized by '
+            a(href='//twitter.com/aganglada', target='_blank') Alejandro Garcia
+            span= ' and '
+            a(href='//twitter.com/kevohagan', target='_blank') Kevin O'Hagan
+      div.section
+      small MallorcaJS  - 2014
+
+
+
+

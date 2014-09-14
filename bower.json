@@ -1,0 +1,21 @@
+{
+  "name": "mallorcajs.com",
+  "version": "0.0.0",
+  "authors": [
+    "Alejandro <aganglada@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "snap.svg": "~0.3.0",
+    "normalize.styl": "~3.0.0"
+  }
+}
