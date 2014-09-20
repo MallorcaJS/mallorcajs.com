@@ -19,6 +19,10 @@ ul
   text-decoration none
   color font_color_default
   border 1px solid font_color_default
+.truncate
+  white-space nowrap
+  overflow hidden
+  text-overflow ellipsis
 
 header
   &.main figure
@@ -55,11 +59,13 @@ section.events
     font-size 1.3em
     text-shadow 2px 2px 0px free_slot_color
     margin-bottom 30px
+a.slot
+  color inherit
 .slot
   background-color #f7f7f7
   border-width 5px
   border-style solid
-  border-color orange
+  border-color free_slot_color
   width 100%
   max-width 280px
   height 270px
@@ -67,14 +73,27 @@ section.events
   box-sizing border-box
   padding 20px
   display inline-block
+  vertical-align top
+  overflow hidden
   h3
     margin-top 0
     text-transform uppercase
+    width 230px
+    height 25px
   p
     text-align left
   &.free
-    border-color free_slot_color
     border-style dashed
+  .bubble
+    padding 7px 15px
+    background-color orange
+    border-radius 20px
+    color white
+  .scroll
+    overflow-y auto
+    height 140px
+    margin-top 15px
+    font-size .8em
 footer
   border-top 1px solid font_color_default
   padding 20px

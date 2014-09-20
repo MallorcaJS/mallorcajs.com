@@ -10,7 +10,7 @@ router.get('/', function(request, response, next)
 
     var _locals = {
         title: 'MallorcaJS - Mallorca\'s javascript meetup group',
-        keywords: 'javascript, mallorca, meetup, events, beers, nodejs, js, jquery, meteor'
+        keywords: 'mallorcajs, javascript, mallorca, meetup, events, beers, nodejs, js, jquery, meteor'
     };
 
     async.parallel([

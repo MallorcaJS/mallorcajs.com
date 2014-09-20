@@ -27,3 +27,6 @@ public/components
 
 # Users Environment Variables
 .lock-wscript
+
+# WebStorm config
+.idea
