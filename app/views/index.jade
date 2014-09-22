@@ -19,13 +19,12 @@ block content
               a.button.join-us(href='//meetup.com/mallorcajs', target='_blank') Join us!
   section.events
       h2 Are you going to lose the opportunity?
-
       each event in [events[0], events[1], events[2]]
         if event
           a.slot(href='#{event.event_url}', target='_blank')
             h3.truncate(title='#{event.name}') #{event.name}
             strong.bubble #{event.yes_rsvp_count} going
-            div.scroll !{event.description}
+            //div.scroll !{event.description}
         else
           div.slot.free
             h3 It is free
