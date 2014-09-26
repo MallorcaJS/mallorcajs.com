@@ -1,0 +1,14 @@
+extends index
+
+block content
+    section.people
+        each member in members
+          article.person
+            a(href='#{member.link}', target='_blank')
+              if member.photo
+                img(src='#{member.photo.photo_link}')
+              else
+                img(src='/img/logomallorcajs.jpg')
+              p.name #{member.name}
+              small #{member.city}, #{member.country.toUpperCase()}
+              small.bio #{member.bio}

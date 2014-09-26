@@ -23,6 +23,8 @@ ul
   white-space nowrap
   overflow hidden
   text-overflow ellipsis
+.center
+  text-align center
 
 header
   &.main figure
@@ -46,6 +48,9 @@ ul.gallery-separator
 p.members
   text-transform uppercase
   text-align center
+  a
+    font-weight bold
+    color inherit
   .join-us
     border none
     background-color orange
@@ -59,7 +64,7 @@ section.events
     font-size 1.3em
     text-shadow 2px 2px 0px free_slot_color
     margin-bottom 30px
-a.slot
+article.slot > a
   color inherit
 .slot
   background-color #f7f7f7
@@ -94,6 +99,25 @@ a.slot
     height 140px
     margin-top 15px
     font-size .8em
+.people
+  padding 20px
+  margin 20px 0
+.person
+  border-top 3px solid free_slot_color
+  margin-bottom 20px
+  overflow hidden
+  height 100px
+  a
+    color inherit
+  p, small
+    margin 0
+    text-align right
+    display block
+    &.bio
+      display none
+  img
+    float left
+    width 100px
 footer
   border-top 1px solid font_color_default
   padding 20px
