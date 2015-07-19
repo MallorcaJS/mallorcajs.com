@@ -21,6 +21,14 @@ block wrap
               a(href='/members') #{members.length} Javascripters
               p.members
                   a.button.join-us(href='//meetup.com/mallorcajs', target='_blank') Join us!
+        script(async, src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
+        ins(
+            class="adsbygoogle",
+            style="display:inline-block;width:728px;height:90px",
+            data-ad-client="ca-pub-1377977444902808",
+            data-ad-slot="8426457515")
+        script.
+            (adsbygoogle = window.adsbygoogle || []).push({})
       section.events
           h2 Are you going to lose the opportunity?
           each event in [events[0], events[1], events[2]]
